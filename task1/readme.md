@@ -1,4 +1,4 @@
-# GitHub Copilot Coding Challenges
+# GitHub Copilot Coding Challenges - Task 1
 
 Welcome to the set of Copilot-enhanced coding challenges! Use any programming language of your choice and leverage GitHub Copilot to solve the following problems.
 
