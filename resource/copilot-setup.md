@@ -1,155 +1,133 @@
-🚀 How to Set Up GitHub Copilot in VS Code and IntelliJ IDEA
 
-🧩 Prerequisites
+# 🤖 Setting Up GitHub Copilot in VS Code and IntelliJ IDEA
 
-✅ A GitHub account with a Copilot subscription (Free for students and OSS contributors).
+## 📋 Prerequisites
 
-✅ Internet access and the latest version of:
+Before getting started, ensure you have:
+- ✅ A GitHub account with Copilot enabled or trial activated
+- ✅ Internet access
+- ✅ Installed:
+  - [Visual Studio Code](https://code.visualstudio.com/)
+  - [IntelliJ IDEA](https://www.jetbrains.com/idea/) (Community or Ultimate)
 
-VS Code
+---
 
-IntelliJ IDEA (Community or Ultimate)
+## ⚙️ Step 1: Enable Copilot on GitHub
 
-💡 Step 1: Enable Copilot in Your GitHub Account
+1. Go to [GitHub Copilot Settings](https://github.com/settings/copilot)
+2. Sign in and activate your Copilot subscription (if not done already)
+3. Enable Copilot for:
+   - Your personal account
+   - Selected or all repositories
+4. Configure optional preferences like:
+   - Enable suggestions in specific languages
+   - Filter code with matching public code
 
-🔗 Navigate to:
+---
 
-https://github.com/settings/copilot
+## 💻 Step 2: Setup GitHub Copilot in **VS Code**
 
-🔧 Actions:
+### 🔌 1. Install GitHub Copilot Plugin
 
-Click on “Copilot” in the left sidebar.
+- Open VS Code
+- Go to Extensions (`Ctrl+Shift+X`)
+- Search for: `GitHub Copilot`
+- Click **Install**
 
-If prompted, subscribe or activate your free trial.
-
-Enable Copilot for your account.
-
-Optional: Configure behavior (e.g., enable for all repositories or selected ones).
-
-💻 Step 2: Setup in VS Code
-
-1. Open VS Code
-
-2. Install GitHub Copilot Plugin
-
-Go to the Extensions panel (Ctrl+Shift+X)
-
-Search for GitHub Copilot
-
-Click Install
-
-🧠 Alternate:
-
+Alternatively:
+```bash
 code --install-extension GitHub.copilot
+```
 
-3. Sign In to GitHub
+---
 
-After install, VS Code prompts you to sign in.
+### 🔐 2. Sign In to GitHub
 
-Click “Sign in” → a browser window opens → authorize Copilot with GitHub.
+- After installation, Copilot will prompt you to **sign in**
+- This opens a GitHub login page in your browser
+- Authorize GitHub Copilot
 
-4. Verify Integration
+---
 
-Open a file (e.g., .js, .java, .ts, .py)
+### ✅ 3. Verify It Works
 
-Start typing a comment or function.
+- Open any code file (e.g., `.ts`, `.js`, `.java`)
+- Type a comment like:  
+  `// function to calculate factorial`
+- Copilot suggests a function
+- Press `Tab` to accept, or `Esc` to reject
 
-Copilot will begin suggesting code inline (grayed text).
+---
 
-💡 Extra for VS Code
+### 💬 (Optional) Install Copilot Chat Extension
 
-Feature
+- Search: `GitHub Copilot Chat` in extensions
+- Install and sign in (available for Pro/Business plans)
+- Use `Ctrl+I` or Chat sidebar to ask Copilot questions
 
-Shortcut
+---
 
-Accept suggestion
+### ⌨️ VS Code Shortcuts
 
-Tab
+| Action | Shortcut |
+|--------|----------|
+| Accept Suggestion | `Tab` |
+| Reject Suggestion | `Esc` |
+| Next Suggestion | `Ctrl + ]` |
+| Open Copilot Chat | `Ctrl + I` |
 
-Dismiss suggestion
+---
 
-Esc
+## 🧠 Step 3: Setup GitHub Copilot in **IntelliJ IDEA**
 
-See more suggestions
+### 🧩 1. Install Copilot Plugin
 
-Ctrl + ]
+- Go to: `File → Settings → Plugins`
+- Search: `GitHub Copilot`
+- Click **Install** and **Restart IDE**
 
-Open Copilot Chat
+---
 
-Ctrl + I or use the Copilot Chat sidebar
+### 🔐 2. Sign In to GitHub
 
-To install Copilot Chat (optional):
+- After restart, a prompt appears to sign in
+- Authorize via GitHub in your browser
+- Once complete, Copilot is ready to use
 
-Search for GitHub Copilot Chat in extensions and install it
+---
 
-Requires Copilot for Business or Pro
+### ✅ 3. Use Copilot in Your Editor
 
-🧠 Step 3: Setup in IntelliJ IDEA
+- Open any supported file
+- Type a comment or function signature
+- Wait for gray suggestions
+- Press `Tab` to accept
 
-1. Open IntelliJ IDEA
+---
 
-2. Install Plugin
+### ⌨️ IntelliJ Shortcuts
 
-Go to: File → Settings → Plugins
+| Action | Shortcut |
+|--------|----------|
+| Accept Suggestion | `Tab` |
+| Trigger Suggestion | `Ctrl + Space` |
+| Reject Suggestion | `Esc` |
 
-Search: GitHub Copilot
+---
 
-Click Install and restart IDEA
+## 🧪 Test It
 
-3. Login with GitHub
+Try typing the following in either IDE:
+```ts
+// function to reverse a string
+```
 
-After restart, IntelliJ will ask you to sign in with GitHub
+You should see Copilot generate the corresponding function.
 
-Authorize in the browser
+---
 
-Once verified, GitHub Copilot will be active
+## 📚 References
 
-4. Use Copilot in Editor
-
-Open a Java/TypeScript file and begin typing
-
-Suggestions appear as gray text
-
-Press Tab to accept
-
-🎮 Common Commands (Both IDEs)
-
-Task
-
-VS Code
-
-IntelliJ IDEA
-
-Accept Suggestion
-
-Tab
-
-Tab
-
-Trigger Suggestion
-
-Ctrl + Space
-
-Ctrl + Space
-
-Dismiss Suggestion
-
-Esc
-
-Esc
-
-Copilot Chat (if installed)
-
-Ctrl + I
-
-Not available (unless WebStorm plugin used)
-
-🧪 Final Checklist
-
-✅ GitHub Copilot enabled in GitHub settings
-
-✅ Plugin installed in your IDE
-
-✅ GitHub login successful
-
-✅ Test suggestion by starting a comment like:// function to reverse a string
+- [GitHub Copilot Docs](https://docs.github.com/en/copilot)
+- [Copilot for VS Code](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot)
+- [Copilot for JetBrains](https://plugins.jetbrains.com/plugin/17718-github-copilot)
