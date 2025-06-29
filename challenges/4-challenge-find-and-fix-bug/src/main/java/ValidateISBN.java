@@ -16,6 +16,7 @@ public class ValidateISBN {
 		throw new NumberFormatException("ISBN numbers must be 10 or 13 digits long");
 	}
 
+
 	private boolean isThisAValidShortISBN(String isbn) {
 		int total = 0;
 
@@ -50,4 +51,6 @@ public class ValidateISBN {
 		}
 		return (total % LONG_ISBN_MULTIPLIER == 0);
 	}
+
+	
 }
