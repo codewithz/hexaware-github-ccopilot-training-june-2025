@@ -1,5 +1,4 @@
 
-```markdown
 # 🧪 Angular Task: Load Products and Add to Cart
 
 ## 🎯 Objective
@@ -60,6 +59,7 @@ src/
 ## 📦 Data Model
 
 `models/product.ts`
+
 ```ts
 export interface Product {
   id: number;
@@ -74,7 +74,5 @@ export interface Product {
 
 - Show a **toast/alert** when a product is added.
 - Display **total item count** in a navbar.
-- Use **RxJS BehaviorSubject** for reactive updates in CartService.
-- Add quantity increment if a product already exists in cart.
-
----
+- Use **RxJS BehaviorSubject** for reactive updates in `CartService`.
+- Add quantity increment if a product already exists in the cart.
